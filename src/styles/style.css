@@ -1,0 +1,284 @@
+@font-face {
+    font-family: 'Jura';
+    src: url('../font/jura\ ttf.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../font/orbitron\ ttf.ttf') format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Jura';
+    background-color: #161616;
+    color: #ffffff;
+}
+
+header {
+    padding: 1.5rem;
+    background-color: #161616;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 4rem;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px black ;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.main_menu a:visited {
+    color: #ffffff;
+}
+
+.main_menu a:hover {
+    color: #AC0000;
+    transition: color 0.2s;
+}
+
+.main_menu li:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    margin-left: 1rem;
+    color: #ffffff;
+}
+
+.hashtag {
+    color: #AC0000;
+}
+
+.main_title {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Orbitron';
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px black ;
+    background: linear-gradient(90deg, #AC0000, #000000, #AC0000);
+    background-size: 200% auto;
+    animation: gradientAnimado 8s ease infinite;
+}
+
+@keyframes gradientAnimado {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.section_presentation {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+span {
+    font-weight: bold;
+}
+
+.section_h2one {
+    font-weight: 100;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px black ;
+}
+
+.pamela_photo {
+    margin-top: 2rem;
+}
+
+.section_paragraph {
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px black ;
+}
+
+.square_modality {
+    margin-top: 4rem;
+    width: 400px;
+    height: 390px;
+    background-color: #AC0000;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: inset 10px 5px 50px -15px black;
+}
+
+.square_paragraph {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.square_list {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    
+}
+
+.section_social_proof {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.second_square {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0C0C0C;
+    border-radius: 25px;
+}
+
+.square_container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.square_video_one,
+.square_video_two,
+.square_video_three {
+    width: 250px;
+    height: 400px;
+    background-color: #AC0000;
+    border-radius: 20px;
+    box-shadow: inset 10px 5px 50px -15px black;
+}
+
+.section_h2two {
+    margin-top: 2rem;
+    font-weight: 100;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px black;
+}
+
+.section_cta_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section_h2three {
+    margin-top: 8rem;
+    font-weight: 100;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px black;
+}
+
+.section_button {
+margin-top: 5rem;
+padding: 1.2rem 6rem;
+font-size: 2.5rem;
+font-weight: bold;
+font-family: 'Jura';
+background: linear-gradient(to right, #CF0D0D, #AC0000);
+color: white;
+text-shadow: 2px 2px 4px black;
+border: none;
+border-radius: 20px;
+cursor: pointer;
+transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.section_button:hover {
+transform: scale(1.05);
+box-shadow: 0 5px 15px rgba(172, 0, 0, 0.4);
+}
+
+.section_paragraph_two {
+margin-top: 2rem;
+font-size: 3rem;
+text-shadow: 2px 2px 4px black ;
+margin-bottom: 2rem;
+}
+
+.third_square {
+margin-top: 15rem;
+margin-bottom: 5rem;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #0C0C0C;
+}
+
+.section_last {
+margin-top: 15rem;
+display: flex;
+justify-content: center;
+font-family: 'Orbitron';
+font-size: 3rem;
+text-shadow: 2px 2px 4px black ;
+}
+
+.fourth_square {
+padding: 50px;
+background-color: #0C0C0C;
+display: flex;
+justify-content: space-between;
+gap: 5rem;
+flex-wrap: wrap;
+font-family: 'Jura';
+}
+
+.footer_paragraph {
+display: flex;
+justify-content: center;
+background-color: #000000;
+padding: 5px;
+color: #ffffff;
+}
+
+.footer_section {
+    font-size: 1.2rem;
+}
+
+.footer_section h2 {
+    margin-bottom: 1rem;
+}
+
+.footer_section a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer_section a:hover {
+    text-decoration: underline;
+    color: #AC0000;
+}
+
+.space_p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
